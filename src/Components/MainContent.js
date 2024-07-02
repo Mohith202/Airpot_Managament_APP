@@ -83,25 +83,22 @@ function MainContent() {
                         </Dialog>
                     )}
                 </DialogTrigger>
-                <Button variant="negative" onPress={handleDeleteSelected} isDisabled={selectedAirports.size === 0}>Delete Selected</Button>
+                
             </Flex>
-            <TableView aria-label="Airports Table" UNSAFE_className="no-border-table">
+
+            <Flex direction={"row"}>
+            <TableView aria-label="Airports Table" UNSAFE_className="custom-grid-table" maxWidth={1250}  selectionMode="multiple" >
                 <TableHeader>
-                    <Column>
-                        <Checkbox isSelected={selectedAirports.size === airports.length} onChange={handleSelectAll} />
-                    </Column>
-                    <Column>Airport</Column>
-                    <Column>Country</Column>
-                    <Column>Code</Column>
-                    <Column>Terminals</Column>
+                    
+                    <Column allowsResizing maxwidth={700}>All Airports</Column>
+                    <Column width={161}>Country</Column>
+                    <Column width={95}>Code</Column>
+                    <Column align='end' width={105}>Terminals</Column>
                 </TableHeader>
                 <TableBody>
                     {airports.map(airport => (
                         <Row key={airport.id}>
-                            <Cell>
-                                <Checkbox isSelected={selectedAirports.has(airport.id)} onChange={() => handleSelect(airport.id)} />
-                            </Cell>
-                            <Cell>{airport.name}</Cell>
+                             <Cell>{airport.name}</Cell>
                             <Cell>{airport.country}</Cell>
                             <Cell>{airport.code}</Cell>
                             <Cell>{airport.terminals.count}</Cell>
@@ -109,31 +106,18 @@ function MainContent() {
                     ))}
                 </TableBody>
             </TableView>
-            <Flex justifyContent="center" marginTop="size-200">
-                <DialogTrigger>
-                    <ActionButton isQuiet>
-                        <img src={Edit} alt="Edit" />
-                    </ActionButton>
-                    {(close) => (
-                        <Dialog>
-                            <Heading>Edit Airport</Heading>
-                            <Content>
-                                <Form>
-                                    <TextField label="Name" value={formState.name} onChange={(value) => setFormState({ ...formState, name: value })} />
-                                    <TextField label="Country" value={formState.country} onChange={(value) => setFormState({ ...formState, country: value })} />
-                                    <TextField label="Code" value={formState.code} onChange={(value) => setFormState({ ...formState, code: value })} />
-                                    <TextField label="Terminals Count" value={formState.terminals.count} onChange={(value) => setFormState({ ...formState, terminals: { ...formState.terminals, count: value } })} />
-                                    <Button variant="cta" onPress={() => { handleUpdate(); close(); }}>
-                                        Update
-                                    </Button>
-                                </Form>
-                            </Content>
-                        </Dialog>
-                    )}
-                </DialogTrigger>
-                <ActionButton isQuiet onPress={() => handleDelete(selectedAirport?.id)}>
-                    <img src={Delete} alt="Delete" />
-                </ActionButton>
+            <div style={{justifyContent:"center", alignItems:"center", marginTop:"30px"}}>
+            {airports.map(airport => (
+                <Flex justifyContent="center" alignItems="center" margin="10px">
+            <ActionButton isQuiet onPress={() => handleEdit(airport)}>
+                                    <img src={Edit} alt="Edit" />
+                                </ActionButton>
+                                <ActionButton isQuiet onPress={() => handleDelete(airport.id)}>
+                                    <img src={Delete} alt="Delete" />
+                                </ActionButton>
+                </Flex>
+            ))}
+            </div>
             </Flex>
         </View>
     );

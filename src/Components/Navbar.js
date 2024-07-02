@@ -4,7 +4,7 @@ import NavImg from "../utility/Image/Navimg.png"
 
 function Navbar() {
     return (
-        <View backgroundColor="gray-100" padding="size-200">
+        <View backgroundColor="gray-100" padding="size-200" marginTop="0px" height="50px">
             <Flex direction="row" justifyContent="space-between" alignItems="center">
                 <Heading level={1}>hava havai</Heading>
                 <img 

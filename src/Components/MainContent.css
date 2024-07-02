@@ -1,10 +1,13 @@
 .add-new-button {
-    background-color: black;
+    background-color: #000000E5;
     color: white;
+    width: 96px;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 6px, 17px, 7px, 17px;
     font-size: 16px;
-    font-weight: bold;
+    opacity: 0.9;
+    font-weight: 600;
+    font-size: 14px;
     text-align: center;
     cursor: pointer;
     border: none;
@@ -12,20 +15,11 @@
 
 .add-new-button:hover {
     background-color: #333;
-}
+} 
 
-.no-border-table {
-    border: none;
-    width: 600px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the table */
-}
 
-.no-border-table .spectrum-Table-cell {
-    border: none;
-}
-
-.no-border-table .spectrum-Table {
-    border: none;
+.custom-grid-table{
+    width:1300px;
 }
 
 .icon-container {
@@ -37,6 +31,5 @@
 .icon-container img {
     cursor: pointer;
     border: none;
-    width: 16px; /* Adjust the size as needed */
-    height: 16px; /* Adjust the size as needed */
+
 }
