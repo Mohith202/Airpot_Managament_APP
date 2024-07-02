@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "Indira Gandhi International Airport",
+        "country": "India",
+        "code": "DEL",
+        "terminals": {
+            "count": 3,
+            "data": [
+                { "id": 1, "name": "Terminal 1", "metadata": "Optional metadata should be two lines." },
+                { "id": 2, "name": "Terminal 2", "metadata": "Optional metadata should be two lines." },
+                { "id": 3, "name": "Terminal 3", "metadata": "Optional metadata should be two lines." }
+             ]
+        },
+        "services": [
+            { "name": "Lost & found", "category": "Option 1", "subCategory": "Option 1", "description": "" }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Dubai International Airport",
+        "country": "UAE",
+        "code": "DXB",
+        "terminals": {
+            "count": 5,
+            "data": [
+                { "id": 1, "name": "Terminal 1", "metadata": "Optional metadata should be two lines." },
+                { "id": 2, "name": "Terminal 2", "metadata": "Optional metadata should be two lines." },
+                { "id": 3, "name": "Terminal 3", "metadata": "Optional metadata should be two lines." },
+                { "id": 4, "name": "Terminal 4", "metadata": "Optional metadata should be two lines." },
+                { "id": 5, "name": "Terminal 5", "metadata": "Optional metadata should be two lines." }
+           
+            ]
+        },
+        "services": [
+            { "name": "Lost & found", "category": "Option 1", "subCategory": "Option 1", "description": "" }]
+    },
+    {
+        "id": 3,
+        "name": "Heathrow Airport",
+        "country": "England",
+        "code": "LHR",
+        "terminals": {
+            "count": 6,
+            "data": [
+                { "id": 1, "name": "Terminal 1", "metadata": "Optional metadata should be two lines." },
+                { "id": 2, "name": "Terminal 2", "metadata": "Optional metadata should be two lines." },
+                { "id": 3, "name": "Terminal 3", "metadata": "Optional metadata should be two lines." },
+                { "id": 4, "name": "Terminal 4", "metadata": "Optional metadata should be two lines." },
+                { "id": 5, "name": "Terminal 5", "metadata": "Optional metadata should be two lines." },
+                { "id": 6, "name": "Terminal 6", "metadata": "Optional metadata should be two lines." }
+            ]},
+        "services": [
+            { "name": "Lost & found", "category": "Option 1", "subCategory": "Option 1", "description": "" }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Istanbul Airport",
+        "country": "Turkey",
+        "code": "IST",
+        "terminals": {
+            "count": 3,
+            "data": [
+                { "id": 1, "name": "Terminal 1", "metadata": "Optional metadata should be two lines." },
+                { "id": 2, "name": "Terminal 2", "metadata": "Optional metadata should be two lines." },
+                { "id": 3, "name": "Terminal 3", "metadata": "Optional metadata should be two lines." }
+              
+            ]},
+        "services": [
+            { "name": "Lost & found", "category": "Option 1", "subCategory": "Option 1", "description": "" }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Dallas/Fort Worth International Airport",
+        "country": "USA",
+        "code": "DFW",
+        "terminals": {
+            "count": 14,
+            "data": [
+                { "id": 1, "name": "Terminal 1", "metadata": "Optional metadata should be two lines." },
+                { "id": 2, "name": "Terminal 2", "metadata": "Optional metadata should be two lines." },
+                { "id": 3, "name": "Terminal 3", "metadata": "Optional metadata should be two lines." },
+                { "id": 4, "name": "Terminal 4", "metadata": "Optional metadata should be two lines." },
+                { "id": 5, "name": "Terminal 5", "metadata": "Optional metadata should be two lines." },
+                { "id": 6, "name": "Terminal 6", "metadata": "Optional metadata should be two lines." },
+                { "id": 7, "name": "Terminal 7", "metadata": "Optional metadata should be two lines." },
+                { "id": 8, "name": "Terminal 8", "metadata": "Optional metadata should be two lines." },
+                { "id": 9, "name": "Terminal 9", "metadata": "Optional metadata should be two lines." },
+                { "id": 10, "name": "Terminal 10", "metadata": "Optional metadata should be two lines." },
+                { "id": 11, "name": "Terminal 11", "metadata": "Optional metadata should be two lines." },
+                { "id": 12, "name": "Terminal 12", "metadata": "Optional metadata should be two lines." },
+                { "id": 13, "name": "Terminal 13", "metadata": "Optional metadata should be two lines." },
+                { "id": 14, "name": "Terminal 14", "metadata": "Optional metadata should be two lines." }
+            ]},
+        "services": [
+            { "name": "Lost & found", "category": "Option 1", "subCategory": "Option 1", "description": "" }
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+.add-new-button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.add-new-button:hover {
+    background-color: #333;
+}
+
+.no-border-table {
+    border: none;
+    width: 600px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the table */
+}
+
+.no-border-table .spectrum-Table-cell {
+    border: none;
+}
+
+.no-border-table .spectrum-Table {
+    border: none;
+}
+
+.icon-container {
+    display: flex;
+    gap: 5px; /* Adjust the gap as needed */
+    margin-left: 10px;
+}
+
+.icon-container img {
+    cursor: pointer;
+    border: none;
+    width: 16px; /* Adjust the size as needed */
+    height: 16px; /* Adjust the size as needed */
+}
